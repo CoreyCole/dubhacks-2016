@@ -1,6 +1,34 @@
-<h1>
-  {{title}}
-</h1>
-<br />
+<md-toolbar color="accent" md-colors="{color:'primary'}">
+  <h1>Find My Stuff</h1>
+  
+</md-toolbar>
 
-<p>Lucy is awesome</p>
+
+<md-sidenav-layout>
+  <md-sidenav #start (click)="start.close()">
+    <md-toolbar class="toolbar">
+      <h1>Menu</h1>
+    </md-toolbar>
+
+    <!--sidebar-->
+    <md-list>
+      <md-list-item>
+        <a [routerLink]="['/main-view']">Find Items</a>
+      </md-list-item>
+      <md-list-item>
+        <a [routerLink]="['/analytics']">Analytics</a>
+      </md-list-item>
+      <md-list-item>
+        <a>Tasks</a>
+      </md-list-item>
+    </md-list>
+   </md-sidenav>
+
+   <md-toolbar class="toolbar">
+      <div>
+        <button md-icon-button (click)="start.open()"><i class="material-icons">menu</i></button>
+      </div>
+   </md-toolbar>
+   <router-outlet></router-outlet>
+  
+</md-sidenav-layout>

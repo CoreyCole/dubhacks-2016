@@ -1,0 +1,19 @@
+
+<img src="{{selectedItem?.imagePath}}" alt="" class="img-responsive"  style="background-color:red">
+<!--can't change style-->
+
+
+<h1>{{selectedItem?.name}}</h1>
+<p>Lost count: {{selectedItem?.count}}</p>
+<br />
+
+<ul>
+  <li *ngFor="let word of selectedItem?.keyWords">
+    {{ word }}
+  </li>
+</ul>
+
+<br />
+<br />
+<button md-raised-button #findButton>FIND</button>
+
