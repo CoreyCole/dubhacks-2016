@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FindService } from './find.service';
 import { BackButtonService } from './back-button.service';
+import { BeaconService } from './beacon.service';
 
 //import { ActivatedRoute, Router } from "@angular/router";
 
@@ -8,7 +9,7 @@ import { BackButtonService } from './back-button.service';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.sass'],
-  providers: [FindService, BackButtonService],
+  providers: [FindService, BackButtonService, BeaconService],
 })
 export class AppComponent {
   title = 'Find My Stuff';
