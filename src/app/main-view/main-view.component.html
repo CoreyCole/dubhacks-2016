@@ -1,10 +1,9 @@
 
-<div *ngFor="let item of myItems; let i = index">
-  <md-card (click)="findClickedItem(i)">
+  <md-card class="cardz" (click)="findClickedItem(i)" *ngFor="let item of myItems; let i = index">
     <md-card-title-group>
         <img md-card-sm-image src="{{ item.imagePath }}">
         <md-card-title>{{ item.name }}</md-card-title>
-        <md-card-subtitle>Count: {{ item.count }}</md-card-subtitle>
+        <!--<md-card-subtitle>Count: {{ item.count }}</md-card-subtitle>-->
     </md-card-title-group>
+    <button md-icon-button class="info-btn"><i class="material-icons">&#xE88F;</i></button>
   </md-card>
-</div>

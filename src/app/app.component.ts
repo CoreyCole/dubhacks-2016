@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { FindService } from './find.service';
 import { BackButtonService } from './back-button.service';
 import { BeaconService } from './beacon.service';
+import { ActivatedRoute, Router } from "@angular/router";
+
 
 //import { ActivatedRoute, Router } from "@angular/router";
 
@@ -15,7 +17,8 @@ export class AppComponent {
   title = 'Find My Stuff';
 
    constructor (
-      private _backButtonService: BackButtonService
+      private _backButtonService: BackButtonService,
+      private router: Router
    ) {}
 
 
@@ -24,4 +27,7 @@ export class AppComponent {
     return this._backButtonService.showBack();
   }
 
+  home() {
+    this.router.navigate(['main-view']);
+  }
 }

@@ -11,6 +11,7 @@ import { AnalyticsViewComponent } from './analytics-view/analytics-view.componen
 import { MaterialModule } from '@angular/material';
 import { ItemViewComponent } from './item-view/item-view.component';
 import {Dubhacks2016RoutingModule} from './app-routing.module';
+import { CameraComponent } from './camera/camera.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import {Dubhacks2016RoutingModule} from './app-routing.module';
     AppComponent,
     MainViewComponent,
     AnalyticsViewComponent,
-    ItemViewComponent
+    ItemViewComponent,
+    CameraComponent
   ],
   imports: [
     BrowserModule,

@@ -1,17 +1,17 @@
-<md-toolbar color="accent" md-colors="{color:'primary'}">
-  <h1>Find My Stuff</h1>
+<md-toolbar class="asdf">
+  <h1 (click)="home()">Finding Memo</h1>
   
 </md-toolbar>
 
 
-<md-sidenav-layout>
+<!--<md-sidenav-layout>
   <md-sidenav #start (click)="start.close()">
     <md-toolbar class="toolbar">
-      <h1>Menu</h1>
+      <h1 #menu>Menu</h1>
     </md-toolbar>
 
     <!--sidebar-->
-    <md-list>
+    <!--<md-list>
       <md-list-item>
         <a [routerLink]="['/main-view']">Find Items</a>
       </md-list-item>
@@ -25,13 +25,14 @@
         <a>Settings</a>
       </md-list-item>
     </md-list>
-   </md-sidenav>
-
+   </md-sidenav>-->
+<!--
    <md-toolbar class="toolbar">
       <div>
         <button md-icon-button (click)="start.open()"><i class="material-icons">menu</i></button>
       </div>
    </md-toolbar>
-   <router-outlet></router-outlet>
+   
   
-</md-sidenav-layout>
+</md-sidenav-layout>-->
+<router-outlet></router-outlet>

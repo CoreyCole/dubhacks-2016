@@ -4,12 +4,14 @@ import { Routes, RouterModule } from '@angular/router';
 import { MainViewComponent } from './main-view/main-view.component.ts';
 import { ItemViewComponent } from './item-view/item-view.component.ts';
 import { AnalyticsViewComponent } from './analytics-view/analytics-view.component.ts';
+import { CameraComponent } from './camera/camera.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/main-view', pathMatch: 'full' },
   { path: 'main-view', component: MainViewComponent },
   { path: 'edit/:id', component: ItemViewComponent },
-  { path: 'analytics', component: AnalyticsViewComponent }
+  { path: 'analytics', component: AnalyticsViewComponent },
+  { path: 'camera', component: CameraComponent }
 ];
   
   
